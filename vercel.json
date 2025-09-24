@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/**/*.[jt]s": {
+      "runtime": "vercel-deno@3.0.4"
+    }
+  },
+  "buildCommand": "/vercel/.deno/bin/deno run -A --node-modules-dir npm:vite build",
+  "installCommand": "curl -fsSL https://deno.land/x/install/install.sh | sh",
+  "outputDirectory": "."
+}
