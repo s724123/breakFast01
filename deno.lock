@@ -2,6 +2,7 @@
   "version": "5",
   "specifiers": {
     "npm:@deno/vite-plugin@^1.0.5": "1.0.5_vite@7.1.7__picomatch@4.0.3",
+    "npm:@tailwindcss/postcss@^4.1.13": "4.1.13",
     "npm:@tailwindcss/vite@^4.1.13": "4.1.13_vite@7.1.7__picomatch@4.0.3",
     "npm:@types/react-dom@^19.1.9": "19.1.9_@types+react@19.1.13",
     "npm:@types/react@^19.1.13": "19.1.13",
@@ -16,6 +17,9 @@
     "npm:vite@^7.1.5": "7.1.7_picomatch@4.0.3"
   },
   "npm": {
+    "@alloc/quick-lru@5.2.0": {
+      "integrity": "sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw=="
+    },
     "@deno/vite-plugin@1.0.5_vite@7.1.7__picomatch@4.0.3": {
       "integrity": "sha512-tLja5n4dyMhcze1NzvSs2iiriBymfBlDCZIrjMTxb9O2ru0gvmV6mn5oBD2teNw5Sd92cj3YJzKwsAs8tMJXlg==",
       "dependencies": [
@@ -470,6 +474,16 @@
       ],
       "scripts": true
     },
+    "@tailwindcss/postcss@4.1.13": {
+      "integrity": "sha512-HLgx6YSFKJT7rJqh9oJs/TkBFhxuMOfUKSBEPYwV+t78POOBsdQ7crhZLzwcH3T0UyUuOzU/GK5pk5eKr3wCiQ==",
+      "dependencies": [
+        "@alloc/quick-lru",
+        "@tailwindcss/node",
+        "@tailwindcss/oxide",
+        "postcss",
+        "tailwindcss"
+      ]
+    },
     "@tailwindcss/vite@4.1.13_vite@7.1.7__picomatch@4.0.3": {
       "integrity": "sha512-0PmqLQ010N58SbMTJ7BVJ4I2xopiQn/5i6nlb4JmxzQf8zcS5+m2Cv6tqh+sfDwtIdjoEnOvwsGQ1hkUi8QEHQ==",
       "dependencies": [
@@ -827,6 +841,7 @@
   "workspace": {
     "dependencies": [
       "npm:@deno/vite-plugin@^1.0.5",
+      "npm:@tailwindcss/postcss@^4.1.13",
       "npm:@tailwindcss/vite@^4.1.13",
       "npm:@types/react-dom@^19.1.9",
       "npm:@types/react@^19.1.13",

@@ -13,6 +13,7 @@
   },
   "imports": {
     "@deno/vite-plugin": "npm:@deno/vite-plugin@^1.0.5",
+    "@tailwindcss/postcss": "npm:@tailwindcss/postcss@^4.1.13",
     "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.1.13",
     "@types/react": "npm:@types/react@^19.1.13",
     "@types/react-dom": "npm:@types/react-dom@^19.1.9",
